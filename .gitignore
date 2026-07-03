@@ -7,3 +7,5 @@ tfplan
 
 # Credentials
 *.json
+# Allow evidence files
+!evidence/**/*.json
