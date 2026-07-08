@@ -10,6 +10,7 @@ A structured lab series translating NIST SP 800-53 compliance controls into infr
 | [2.4](labs/lab-2-4) | Terraform Modules for Compliance | GCP | Reusable module with enforced controls consumers cannot disable |
 | [2.5](labs/lab-2-5) | IaC as Compliance Evidence | AWS | Object Lock evidence vault; hashed, versioned, immutable evidence bundles |
 | [3.3](labs/lab-3-3) | Compliance Policies in Rego | GCP | Rego policy library validating a Terraform plan against NIST controls before apply |
+| [3.4](labs/lab-3-4) | PaC + Terraform via Conftest | AWS | Adds AWS-resource-type variants of the SC-28/AC-3/CM-6 policies and a fail-closed `policy-gate.sh` Conftest wrapper, same control IDs across both clouds |
 
 ## Prerequisites
 
@@ -19,7 +20,8 @@ A structured lab series translating NIST SP 800-53 compliance controls into infr
 - Roles: roles/storage.admin and roles/cloudkms.admin on GCP
 - Cloud KMS API enabled on GCP
 - OPA >= 0.60.0 (Lab 3.3 onward)
+- Conftest >= 0.50 (Lab 3.4 onward)
 
 ## Context
 
-This lab series is built around the premise that compliance controls should live in code, not in documentation. By the time a control reaches a Terraform module, a bucket policy, or a Rego rule, it is no longer aspirational, it is enforced. This repository is part of a broader curriculum covering cloud infrastructure, GRC engineering, and evidence generation for frameworks like NIST SP 800-53 and FedRAMP.
+This lab series is built around the premise that compliance controls should live in code, not in documentation. By the time a control reaches a Terraform modu
