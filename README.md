@@ -11,6 +11,7 @@ A structured lab series translating NIST SP 800-53 compliance controls into infr
 | [2.5](labs/lab-2-5) | IaC as Compliance Evidence | AWS | Object Lock evidence vault; hashed, versioned, immutable evidence bundles |
 | [3.3](labs/lab-3-3) | Compliance Policies in Rego | GCP | Rego policy library validating a Terraform plan against NIST controls before apply |
 | [3.4](labs/lab-3-4) | PaC + Terraform via Conftest | AWS | Adds AWS-resource-type variants of the SC-28/AC-3/CM-6 policies and a fail-closed `policy-gate.sh` Conftest wrapper, same control IDs across both clouds |
+| [4.3](labs/lab-4-3) | GRC Evidence Pipeline | AWS | OIDC-based CI wiring: Conftest + tfsec gate runs on every PR via GitHub Actions, uploads named evidence artifact per run |
 
 ## Prerequisites
 
