@@ -1,0 +1,8 @@
+﻿# .tfsec/config.yml
+#
+# aws-s3-encryption-customer-key: labs/lab-2-3/main.tf intentionally uses
+# SSE-S3 (AES256) instead of a customer-managed KMS key. The switch to
+# KMS is staged as a commented-out teaser block in that file and deferred
+# to a later lab in the curriculum. Tracked exception, not an oversight.
+exclude:
+  - aws-s3-encryption-customer-key

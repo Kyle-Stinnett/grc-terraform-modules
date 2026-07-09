@@ -91,6 +91,12 @@ resource "aws_s3_bucket_acl" "log" {
   bucket     = aws_s3_bucket.log.id
   acl        = "log-delivery-write"
 }
+resource "aws_s3_bucket_versioning" "log" {
+  bucket = aws_s3_bucket.log.id
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "log" {
   bucket = aws_s3_bucket.log.id
