@@ -24,4 +24,4 @@ A structured lab series translating NIST SP 800-53 compliance controls into infr
 
 ## Context
 
-This lab series is built around the premise that compliance controls should live in code, not in documentation. By the time a control reaches a Terraform modu
+This lab series is built around the premise that compliance controls should live in code, not in documentation. By the time a control reaches a Terraform module, a bucket policy, or a Rego rule, it is no longer aspirational, it is enforced. This repository is part of a broader curriculum covering cloud infrastructure, GRC engineering, and evidence generation for frameworks like NIST SP 800-53 and FedRAMP.
